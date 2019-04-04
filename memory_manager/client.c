@@ -3,7 +3,6 @@
 #include "a.h"
 
 int main(){
-	// printf("size of: %d %d\n", sizeof(Header), sizeof(unsigned));
 	allocate(265);
 	void *a = mymalloc(50);
 	void *b = mymalloc(30);
