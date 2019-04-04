@@ -30,37 +30,37 @@ void display_mem_map();
 // assume book keeping : 10 bytes for both allocated and free cases
 // 
 // start_addr   block_in_bytes status
-// 0		10		book
+// 0		10		book-keeping
 // 10           990             free
 // mymalloc(100)
-// 0		10		book	
+// 0		10		book-keeping	
 // 10           100             allocated
-// 110		10		book
+// 110		10		book-keeping
 // 120          (1000 -120) = 880  free
 // mymalloc(200)
-// 0		10		book
+// 0		10		book-keeping
 // 10           100             allocated
-// 110		10		book
+// 110		10		book-keeping
 // 120          200             allocated
-// 320		10		book
+// 320		10		book-keeping
 // 330          670             free
 // mymalloc(150)
-// 0		10		book
+// 0		10		book-keeping
 // 10           100             allocated
-// 110		10		book
+// 110		10		book-keeping
 // 120          200             allocated
-// 320		10		book
+// 320		10		book-keeping
 // 330          150             allocated
-// 480		10		book
+// 480		10		book-keeping
 // 490          510             free
 // free(addr 120)
-// 0		10		book
+// 0		10		book-keeping
 // 10           100             allocated
-// 110		10		book
+// 110		10		book-keeping
 // 120          200             free
-// 320		10		book
+// 320		10		book-keeping
 // 330          150             allocated
-// 480		10		book
+// 480		10		book-keeping
 // 490          510             free
  
 #endif
