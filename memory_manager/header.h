@@ -3,7 +3,6 @@
 
 
 
-//  function to allocate memory for the global array p, n number of bytes long.
 //  when we call malloc(sizeof(int) * num) for the first time, the os does't exactly gives us (sizeof(int) * num) units
 //  of memory, but instead it gives the whole page and then internally in the whole page,
 //  (sizeof(int) * num) units of memory gets allocated to us.
@@ -12,7 +11,7 @@
 //  the whole page according to our needs.
 
 extern char *p; // pointer which stores the address of the page.
-void allocate(int n); // fundction allocating page of size n.
+void allocate(int n); // fundction allocating page of size n bytes long and global variable p is the pointer to that memory
 
 void* mymalloc(int size); //function to allocate a block of size "size" from p
 
@@ -24,7 +23,7 @@ void myfree(void *b); //free the block pointed to by the parameter
 // 10  for free chunk
 void print_book();
 
-
+// prints the memory map of the page allocated
 void display_mem_map(); 
 // Assume n = 1000
 // assume book keeping : 10 bytes for both allocated and free cases
