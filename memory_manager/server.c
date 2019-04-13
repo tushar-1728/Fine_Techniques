@@ -2,10 +2,11 @@
 #include <stdlib.h>
 #include "a.h"
 
+// book-keeping
 typedef struct header{
-	unsigned size;
-	char status;
-	struct header *next;
+	unsigned size; // size of memory-block after this book-keeping
+	char status; // tells memory has been allocated or not; 0-not allocated, 1-allocated
+	struct header *next; // pointer to next memory block
 }Header;
 
 char * p;
