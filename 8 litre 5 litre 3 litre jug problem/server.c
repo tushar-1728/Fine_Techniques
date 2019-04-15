@@ -89,13 +89,13 @@ int is_repeated(const list_t* ptr_list, const state_t* ptr_state)
 
 // functions dealing with states
 
-void init_state(state_t *ptr_state)
-{
-	ptr_state->jug_8 = 8;
-	ptr_state->jug_5 = 0;
-	ptr_state->jug_3 = 0;
-	ptr_state->fn_index = 0;
-}
+// void init_state(state_t *ptr_state)
+// {
+// 	ptr_state->jug_8 = 8;
+// 	ptr_state->jug_5 = 0;
+// 	ptr_state->jug_3 = 0;
+// 	ptr_state->fn_index = 0;
+// }
 void disp_state(const state_t *ptr_state)
 {
 	printf("%d %d %d\n", ptr_state->jug_8, ptr_state->jug_5, ptr_state->jug_3);
