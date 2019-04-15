@@ -1,4 +1,4 @@
-Brute force approach for solving 8l 5l 3l jug problem.
+Back-trackng and state-space search approach for solving 8l 5l 3l jug problem.
 User is asked to enter the initial and final state and the output is redirected to op.txt file.
 
 Format of output file:
