@@ -4,18 +4,19 @@
 
 int main()
 {
-	FILE *fp = fopen("op.txt","w");
-	state_t start_state;
+	FILE *fp = fopen("op.txt","w"); //the file that will store the output
 	int inp1, inp2, inp3;
-
-	printf("Enter the contents of 8L 5L 3L jug: ");
+	
+	state_t start_state;
+	printf("Enter the initial contents of 8L 5L 3L jug: ");
 	scanf("%d %d %d", &inp1, &inp2, &inp3);
 	set_state(&start_state, inp1, inp2, inp3);
-	state_t goal_state;
 	
-	printf("Enter the final state: ");
+	state_t goal_state;
+	printf("Enter the final contents of 8L 5L 3L jug: ");
 	scanf("%d %d %d", &inp1, &inp2, &inp3);
 	set_state(&goal_state, inp1, inp2, inp3);
+	
 	// creating and initialising the list
 	list_t l;
 	init_list(&l);
@@ -29,12 +30,12 @@ int main()
 	int index;
 
 	void (*pour[])(const state_t *src, state_t *dst) = {
-		pour_8to5,
-		pour_8to3,
-		pour_5to8,
-		pour_5to3,
-		pour_3to8,
-		pour_3to5
+		pour_8to5, // function to pour from 8l to 5l jug
+		pour_8to3, // function to pour from 8l to 3l jug
+		pour_5to8, // function to pour from 5l to 8l jug
+		pour_5to3, // function to pour from 5l to 3l jug
+		pour_3to8, // function to pour from 3l to 8l jug
+		pour_3to5  // function to pour from 3l to 5l jug
 	};
 	int count = 0; // variable to keep count of solutions
 	while(l.tail)
