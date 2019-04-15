@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "0221_header_A3.h"
+#include "header.h"
 
 
 // functions dealing with insertion and deletion of doubly linked list
