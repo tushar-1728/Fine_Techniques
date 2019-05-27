@@ -7,5 +7,4 @@ Now for getting sorted whole numbers I have traversed from bit 0 and whenever a 
 For example: max limit is 65 and numbers to be sorted are 24, 35, 10, 63
 	then size of array will be 3 to get 65 bits or more (32 bits per element)
 	then 24th, 35th 10th and 63rd bit of the array will be set
-	after that we traverse from position 0, whichever bit is found 1 then that position is printed generating sorted
-  sequence of elements.
+	after that we traverse from position 0, whichever bit is found 1 then that position is printed generating sorted sequence of elements.
