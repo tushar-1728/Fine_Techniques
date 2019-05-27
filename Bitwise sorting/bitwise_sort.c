@@ -27,9 +27,9 @@ int main(){
 		arr[arr_no] |= (1 << bit_no);  // setting the bit 1
 	}
 	// traversing through the bits to get sorted elements
-	for(int i = 0; i < arr_limit; ++i){
-		for(int j = 0; j < 32; ++j){
-			if(arr[i] & (1 << j)){
+	for(int i = 0; i < arr_limit; ++i){ // this for loop traverses through each element
+		for(int j = 0; j < 32; ++j){ // this for loop traverses through each bit of given element
+			if(arr[i] & (1 << j)){ // if the bit is set element gets printed
 				printf("%d ", 32*i+j);
 			}
 		}
