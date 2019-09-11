@@ -1,4 +1,4 @@
-This program implements persistent binary search tree with insertion, deletion preorder and post-order traversal. The output of preorder and post-order traversal is re-directed to file. The program is divided into three parts client file, header file, implementation file.
+This program implements persistent binary search tree with insertion, deletion preorder and post-order traversal. The output of preorder and post-order traversal is re-directed to file. So basically the idea is to store the contents that the user gives in form of binary tree on the storage device, so that searching for the contents can be easier. Here in my program I have narrow downThe program is divided into three parts client file, header file, implementation file.
 Header file contains structure for required data types and declarations of all the functions.
 Client file contains code for taking input from the user and calls the required functions as when required and also declares the header of the binary tree and also the file pointer referring to the file to which binary tree is written.
 Implementation file is the heart of the whole program which contains definition of all the functions.
