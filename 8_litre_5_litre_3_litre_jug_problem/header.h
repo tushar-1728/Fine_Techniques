@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 struct state // defines every component of a state
 {
 	int jug_8; // # of units of liquid in 8 litre jug
